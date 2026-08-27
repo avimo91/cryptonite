@@ -72,7 +72,7 @@ GitHub repository: [https://github.com/avimo91/cryptonite](https://github.com/av
 
 ## Live Website
 
-Deployed website: `ADD_DEPLOYED_URL_HERE`
+Deployed website: [https://cryptonite-avimo.web.app](https://cryptonite-avimo.web.app)
 
 ## Developer
 
