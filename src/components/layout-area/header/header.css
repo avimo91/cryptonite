@@ -1,0 +1,24 @@
+.Header {
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.25)),
+        url("../../../assets/crypto-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Header h1 {
+    margin: 0;
+    color: white;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+}

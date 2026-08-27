@@ -1,0 +1,73 @@
+.Recommendations {
+    width: 100%;
+}
+
+.Recommendations > p {
+    padding: 20px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+.Recommendations > div:not(.Recommendations-result) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 22px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+}
+
+.Recommendations label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    background: #f8fafc;
+    cursor: pointer;
+}
+
+.Recommendations input[type="radio"] {
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.Recommendations-result {
+    margin-top: 22px;
+    padding: 24px;
+    background: white;
+    border-left: 5px solid #2563eb;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+}
+
+.Recommendations-result h3 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+.Recommendations-result p {
+    line-height: 1.7;
+    color: #334155;
+}
+
+.Recommendations-result small {
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .Recommendations > div:not(.Recommendations-result) {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .Recommendations label,
+    .Recommendations button {
+        width: 100%;
+    }
+}

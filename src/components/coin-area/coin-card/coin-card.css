@@ -1,0 +1,107 @@
+.CoinCard {
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.CoinCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.14);
+}
+
+.CoinCard > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.CoinCard > div:first-child span:first-child {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #2563eb;
+}
+
+.CoinCard > div:first-child span:last-child {
+    color: #64748b;
+    text-align: right;
+}
+
+.CoinCard > div:nth-child(2) {
+    min-height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoinCard > div:nth-child(2) img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.CoinCard > label {
+    position: relative;
+    width: 48px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.CoinCard > label input {
+    position: absolute;
+    opacity: 0;
+}
+
+.CoinCard > label span {
+    position: absolute;
+    inset: 0;
+    background: #cbd5e1;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.CoinCard > label span::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.CoinCard > label input:checked + span {
+    background: #2563eb;
+}
+
+.CoinCard > label input:checked + span::before {
+    transform: translateX(22px);
+}
+
+.CoinCard > button {
+    width: 100%;
+    margin-top: auto;
+}
+
+.CoinCard > button + div {
+    padding: 12px;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.CoinCard > button + div p {
+    margin: 5px 0;
+    font-weight: 600;
+}

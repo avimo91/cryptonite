@@ -1,0 +1,32 @@
+.Reports {
+    width: 100%;
+}
+
+.Reports > p {
+    padding: 20px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.Reports > div {
+    width: 100%;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+}
+
+.Reports h3 {
+    margin: 0 0 20px;
+    color: #0f172a;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+    .Reports > div {
+        padding: 14px;
+    }
+}
