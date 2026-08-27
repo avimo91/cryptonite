@@ -68,7 +68,7 @@ The original assignment referenced CryptoCompare for real-time prices. In this i
 
 ## GitHub
 
-GitHub repository: `ADD_GITHUB_URL_HERE`
+GitHub repository: [https://github.com/avimo91/cryptonite](https://github.com/avimo91/cryptonite)
 
 ## Live Website
 
